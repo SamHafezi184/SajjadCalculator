@@ -12,7 +12,15 @@ namespace SajjadCalculator.Controllers
     public class AuthController : ControllerBase
     {
 
-
+        /// <summary>
+        /// Generates a JWT token for testing purposes.
+        /// </summary>
+        /// <remarks>
+        /// Any combination of username and password is accepted for this endpoint.
+        /// This endpoint is intended for testing purposes only.
+        /// </remarks>
+        /// <param name="request">The login request containing username and password.</param>
+        /// <returns>A JWT token.</returns>
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginRequest request)
         {

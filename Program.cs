@@ -79,6 +79,10 @@ namespace SajjadCalculator
                         new string[] {} // No specific scopes are required for this API
                     }
                 });
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                options.IncludeXmlComments(xmlPath);
             });
             builder.Services.AddAuthorization(options =>
             {
