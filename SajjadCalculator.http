@@ -1,0 +1,6 @@
+@SajjadCalculator_HostAddress = http://localhost:5048
+
+GET {{SajjadCalculator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
